@@ -1,0 +1,21 @@
+body {
+  color: #fff;
+}
+.wrapper {
+  --color-name: var(--cviol);
+}
+.person_name {
+  border-radius: var(--border-r-sm) var(--border-r-sm);
+  padding: 10px;
+  color: var(--cw);
+  font-size: var(--fs-sub-header);
+  font-weight: var(--fw-bold);
+  background-color: var(--color-name);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 5px solid var(--color-name);
+  border-radius: var(--border-r-sm);
+  padding: var(--space-md);
+}

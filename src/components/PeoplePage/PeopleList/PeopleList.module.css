@@ -1,0 +1,44 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.peopleUl {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.peopleUl li {
+  width: 190px;
+  margin: 20px;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.peopleUl li:hover {
+  transform: scale(1.1);
+}
+.peopleUl li a {
+  text-decoration: none;
+  text-align: center;
+}
+.peopleUl li img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: var(--border-r-sm) var(--border-r-sm) 0px 0px;
+}
+/* .container {
+  width: 75%;
+  margin: 0 auto;
+} */

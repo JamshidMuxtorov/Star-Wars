@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-right: var(--space-lg);
+  object-fit: cover;
+}
+.container ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container ul li a {
+  display: block;
+  margin: 0 10px;
+  padding: 7px 10px;
+  min-width: 70px;
+  text-decoration: none;
+  color: var(--cw);
+  text-align: center;
+  font-weight: var(--fw-b);
+  font-family: var(--ff-main);
+  text-shadow: var(--tshdw-yw);
+  transition: var(--tr);
+}
+.container ul li :global(a.active) {
+  border: 2px solid var(--cviol);
+  color: var(--cviol);
+  text-shadow: none;
+}

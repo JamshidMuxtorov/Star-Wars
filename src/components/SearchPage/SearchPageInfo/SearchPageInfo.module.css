@@ -1,0 +1,44 @@
+.list__container {
+  column-count: 3;
+  margin: var(--space-lg);
+  padding: 0;
+  list-style: none;
+}
+
+.list__item {
+}
+
+.list__item a {
+  display: inline-flex;
+  color: var(--cb);
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.photo {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: var(--border-r-sm);
+}
+.person__name {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 var(--space-small);
+  color: var(--cw);
+  text-shadow: var(--tsdw-yw);
+}
+.person__comment {
+}
+@media screen and (max-width: 850px) {
+  .list__container {
+    column-count: 2;
+  }
+}
+@media screen and (max-width: 370px) {
+  .list__container {
+    column-count: 1;
+  }
+}

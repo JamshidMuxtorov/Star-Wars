@@ -1,0 +1,8 @@
+.buttons {
+  margin: 10px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

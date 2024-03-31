@@ -1,0 +1,104 @@
+:root {
+  --cw: #fff;
+  --cb: #000;
+  --cy: #ffff00;
+  --cbl: #6a83fb;
+  --cviol: #ae72e2;
+  --cr: #f75d83;
+  --cdg: #10100e;
+
+  --w-max: 1200px;
+
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-small: 5px;
+  --margin-list: 7px;
+
+  --border-r-sm: 3px;
+  --border-r-md: 5px;
+
+  --fs-header: 26px;
+  --fs-sub-header: 18px;
+  --fw-b: 600;
+  --ff-main: sans-serif;
+  --tshdw-yw: 0 0 2px var(--cw), 0 0 40px var(--cbl);
+  --tshdw-yy: 0 0 2px var(--cw), 0 0 40px var(--cy);
+  --box-shadow-white: 0 16px 24px 2px rgba(255, 255, 255, 0.02),
+    0 6px 30px 5px rgba(255, 255, 255, 0.04),
+    0 8px 10px -5px rgba(255, 255, 255, 0.1);
+
+  --box-shadow-black: 0 16px 24px 2px rgba(0, 0, 0, 0.5),
+    0 6px 30px 5px rgba(0, 0, 0, 0.1), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  --tr: 0.4s;
+
+  --theme-light-header: #dfe2df;
+  --theme-dark-header: #ca6c6f;
+  --theme-neitral-header: #cccc46;
+  --theme-def-header: var(--theme-neitral-header);
+
+  --theme-light-img: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(36, 210, 202, 1) 98%
+  );
+  --theme-dark-img: linear-gradient(
+    298deg,
+    rgba(162, 32, 32, 1) 0%,
+    rgba(74, 34, 255, 1) 50%,
+    rgba(78, 29, 168, 1) 100%
+  );
+  --theme-neitral-img: url("./static/v4.gif");
+  --theme-def-img: var(--theme-neitral-img);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--cdg);
+  font-family: var(--ff-main);
+  background-image: var(--theme-def-img);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+img {
+  display: block;
+}
+.header_text {
+  line-height: 1.7;
+  text-shadow: 0 0 2px var(--cb);
+  color: var(--theme-def-header);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  scrollbar-color: rgb(37, 56, 97) rgba(0, 0, 0, 0.7);
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(37, 56, 97);
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* Анимационный фон  */
+/* body {
+  background: #060e1b;
+  overflow: hidden;
+}
+
+canvas {
+  opacity: 0.5;
+} */

@@ -1,0 +1,16 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: var(--fw-b);
+  text-decoration: none;
+  color: var(--cy);
+  margin-bottom: 30px;
+}
+.link img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  object-position: center center;
+  color: yellow;
+}
