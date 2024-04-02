@@ -56,11 +56,11 @@ const routes = createBrowserRouter(
 
 
 
-        <Route path="/" element={<RootLayout />}>
+        <Route basename={`/${REP}/`} path="/" element={<RootLayout />}>
 
-            <Route index element={<HomePage />} />
+            <Route basename={`/${REP}/`} index element={<HomePage />} />
             {routesConfig.map((route, index) => (
-                <Route {...route} key={index} />
+                <Route basename={`/${REP}/`} {...route} key={index} />
             ))}
 
         </Route>
