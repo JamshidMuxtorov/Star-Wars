@@ -5,12 +5,13 @@ import cn from 'classnames'
 import routes from 'routes/routes'
 import { RouterProvider } from 'react-router-dom'
 import Header from 'components/header/Header'
+import { REP } from 'constants/pag'
 
 function App() {
   return (
 
     <div className={style.wrapper}>
-      <RouterProvider router={routes}></RouterProvider>
+      <RouterProvider basename={`/${REP}/`} router={routes}></RouterProvider>
     </div>
 
 
