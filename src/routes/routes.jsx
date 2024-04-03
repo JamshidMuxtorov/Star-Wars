@@ -9,6 +9,8 @@ import PersonPage from 'containers/PersonPage'
 import FavoritePage from 'containers/FavoritePage'
 import SearchPage from 'containers/SearchPage'
 import ErrorMessage from 'components/PeoplePage/ErrorMessage'
+import { REP_NAME } from 'constants/rep'
+
 const routesConfig = [
 
     {
@@ -56,11 +58,11 @@ const routes = createBrowserRouter(
 
 
 
-        <Route basename={`/${REP}/`} path="/" element={<RootLayout />}>
+        <Route   path="/" element={<RootLayout />} >
 
-            <Route basename={`/${REP}/`} index element={<HomePage />} />
+            <Route    index element={<HomePage />} />
             {routesConfig.map((route, index) => (
-                <Route basename={`/${REP}/`} {...route} key={index} />
+                <Route {...route} key={index} />
             ))}
 
         </Route>
@@ -68,8 +70,6 @@ const routes = createBrowserRouter(
 
 
     )
-
 )
-
 
 export default routes
